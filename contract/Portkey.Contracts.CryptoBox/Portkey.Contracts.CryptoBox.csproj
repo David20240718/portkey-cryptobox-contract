@@ -24,14 +24,21 @@
         <ContractReference Include="..\..\protobuf\acs0.proto">
             <Link>Protobuf\Proto\reference\acs0.proto</Link>
         </ContractReference>
-        <ContractReference Include="..\..\protobuf\token_contract.proto">
-            <Link>Protobuf\Proto\reference\token_contract.proto</Link>
+<!--        <ContractReference Include="..\..\protobuf\token_contract.proto">-->
+<!--            <Link>Protobuf\Proto\reference\token_contract.proto</Link>-->
+<!--        </ContractReference>-->
+        <ContractReference Include="..\..\protobuf\aelf_test_contract.proto">
+            <Link>Protobuf\Proto\reference\aelf_test_contract.proto</Link>
         </ContractReference>
+       
     </ItemGroup>
 
     <ItemGroup>
         <ContractBase Include="..\..\protobuf\acs12.proto">
             <Link>Protobuf\Proto\reference\acs12.proto</Link>
+        </ContractBase>
+        <ContractBase Include="..\..\protobuf\acs2.proto">
+            <Link>Protobuf\Proto\reference\acs2.proto</Link>
         </ContractBase>
     </ItemGroup>
     

@@ -1,5 +1,5 @@
-using AElf.Contracts.MultiToken;
 using AElf.Standards.ACS0;
+using AElfTest.Contract;
 
 namespace Portkey.Contracts.CryptoBox
 {
@@ -10,6 +10,6 @@ namespace Portkey.Contracts.CryptoBox
     {
         // state definitions go here.
         internal ACS0Container.ACS0ReferenceState GenesisContract { get; set; }
-        internal TokenContractContainer.TokenContractReferenceState TokenContract { get; set; }
+        internal AElfTestContractContainer.AElfTestContractReferenceState TokenContract { get; set; }
     }
 }
