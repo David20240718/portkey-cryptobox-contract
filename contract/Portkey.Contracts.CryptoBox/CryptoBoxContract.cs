@@ -1,5 +1,6 @@
 using AElf;
 using AElf.Sdk.CSharp;
+using AElf.Types;
 using AElfTest.Contract;
 using Google.Protobuf.WellKnownTypes;
 
@@ -26,8 +27,7 @@ namespace Portkey.Contracts.CryptoBox
             Assert(input.MaxCount > 0, "MaxCount should be greater than 0.");
             State.Admin.Value = input.Admin ?? Context.Sender;
             State.CryptoBoxMaxCount.Value = input.MaxCount;
-            State.TokenContract.Value =
-                Context.GetContractAddressByName(SmartContractConstants.TokenContractSystemName);
+            State.TokenContract.Value = Address.FromBase58(input.TokenAddress);
             State.Initialized.Value = true;
             return new Empty();
         }
